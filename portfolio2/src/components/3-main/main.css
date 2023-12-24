@@ -1,0 +1,145 @@
+/* 
+################################
+table of contents
+###############################
+1-left section
+2-right section
+
+*/
+main.flex{
+    gap: 3rem;
+    align-items: start;
+}
+
+
+/* 
+    ###############################
+    1- left-section ==> buttons
+    ###############################
+*/
+
+section.left-section.flex {
+    flex-direction: column;
+    gap: 10px;
+}
+section.left-section.flex button{
+    background-color:rgba(36 , 37 , 46 , 1) ;
+    width: 11rem;
+    padding: .75rem 0;
+    text-align: center;
+    font-size: 1.05rem;
+    text-transform: capitalize;
+    border: none;
+    color: #fff;
+    opacity: .5;
+    border-radius: 8px;
+    transition: .3s;
+}
+section.left-section.flex button.active{
+    opacity: 1;
+    font-weight: bold;
+    letter-spacing: .6px;
+    padding: .8rem 0;
+    border:1px solid var(--bleu);
+
+}
+.light section.left-section.flex button.active{
+    border:1px solid #000;
+}
+section.left-section.flex button:hover{
+    opacity: 1;
+}
+
+
+
+
+
+/* 
+    ###############################
+    2- rigth section 
+    ###############################
+*/
+.card{
+    box-shadow: -1px 1px rgba(0, 0, 0, 0.21) ,1px 1px rgba(0, 0, 0, 0.21);
+    border: solid 1px rgba(93 , 188 , 252 , .3);
+    transition: all .3s;
+    border-radius: 5px;
+    background-image: linear-gradient(
+        rgba(255, 255,255 , 0.05),
+        rgba(255,255,255,0.04)
+    );
+}
+.light .card,.light .card:hover{
+    border:none;
+}
+.card img{
+    border-radius: 5px;
+}
+.card:hover{
+    border: solid 1px var(--bleu);
+    rotate: 1deg;
+    scale: 1.01;
+    cursor: pointer;
+}
+.light .card:hover{
+    background: rgb(243, 243, 243);
+}
+main section.right-section{
+flex-grow: 1;
+flex-wrap: wrap;
+justify-content: center;
+column-gap: 16px;
+row-gap: 2rem;
+}
+.card .box{
+    padding:1rem .4rem;
+}
+.card .box .title{
+    color: var(--title);
+    text-transform:capitalize;
+}
+.card .box .sub-title{
+    color: var(--subtitle);
+    font-size: .8rem;
+    margin-top: .7rem;
+    margin-bottom: 1.1rem;
+    line-height: 1.3rem;
+}
+.card .box .icons{
+    justify-content: space-between;
+}
+.card .icon-github-square , .card .icon-link{
+    font-size: 1.2rem;
+    color: var(--subtitle);
+
+}
+.card .icon-github-square:hover , .card .icon-link:hover{
+    font-size: 1.25rem;
+    color: var(--icon-hover);
+    cursor: pointer;
+    
+}
+.card .link{
+    font-size: .9rem;
+    color: var(--bleu);
+    margin-right: 12px;
+}
+@media(max-width:600px){
+    main.flex{
+        flex-direction: column;
+        align-items: center;
+        gap:2.64rem;
+    }
+    main section.left-section.flex{
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 10px;
+       justify-content: center;
+    }
+    main section.left-section.flex button{
+        width: 7rem;
+        padding: .8rem 0;
+        font-size: .9rem;
+    }
+}
+
