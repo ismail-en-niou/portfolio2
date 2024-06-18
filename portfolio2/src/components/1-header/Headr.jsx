@@ -32,8 +32,8 @@ function Header() {
                 <ul className="flex">
                     <li><a href="#about">About</a></li>
                     <li><a href="#project">Projects</a></li>
-                    <li><a href="#">Articles</a></li>
-                    <li><a href="#">CV</a></li>
+                    <li><a href="/articals">Blogs</a></li>
+                    <li><a href="#Services">Services</a></li>
                     <li><a href="#contact">Contact</a></li>
                     <li><a href="#tech">Technologie</a></li>
                 </ul>
@@ -69,8 +69,8 @@ function Header() {
                         </li>
                         <li><a  onClick={() => setshowModel(false)} href="#about">About</a></li>
                         <li><a  onClick={() => setshowModel(false)} href="#project">Projects</a></li>
-                        <li><a  onClick={() => setshowModel(false)} href="#">Articles</a></li>
-                        <li><a  onClick={() => setshowModel(false)} href="#">CV</a></li>
+                        <li><a  onClick={() => setshowModel(false)} href="/articals">Blogs</a></li>
+                        <li><a  onClick={() => setshowModel(false)} href="#Services">Services</a></li>
                         <li><a  onClick={() => setshowModel(false)} href="#contact">Contact</a></li>
                         <li><a  onClick={() => setshowModel(false)} href="#tech">Technologie</a></li>
                     </ul>
