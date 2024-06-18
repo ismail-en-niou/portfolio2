@@ -33,7 +33,7 @@ export default function Hero() {
         <p>
         Ismail En-Niou is an experienced 
         frontend developer with a strong proficiency 
-        in HTML, CSS,  JavaScript , php , c and react.js  . With 1 years of experience
+        in HTML, CSS,  JavaScript , php , c and react.js  . With 2 years of experience
          in the industry,Ismail is well-versed in various frontend frameworks
           and has worked on a range of projects
          across different industries
