@@ -95,4 +95,12 @@ export const myproject = [
       link:"https://ismail-en-niou.github.io/extation/BeFree%20Test/page/home/home2.html",
       git:"https://github.com/ismail-en-niou/extation/"
     },
+    {
+      title: "Modern-Restaurant-Application",
+      category: ["react"],
+      subtitle: "Modern Restaurant Application responsive ",
+      imgpath: "./images/resteau.png",
+      link:"https://modern-restaurant-applicati-git-720fa1-ismail-en-nious-projects.vercel.app/",
+      git:"https://github.com/ismail-en-niou/Modern-Restaurant-Application"
+    },
   ];
