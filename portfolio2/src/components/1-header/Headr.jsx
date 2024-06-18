@@ -1,77 +1,83 @@
 import React, { useEffect, useState } from "react";
 import "./header.css";
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
-
- function Header(){
-    const [showModal , setshowModel] = useState(false);
-
+function Header() {
+    const [showModal, setshowModel] = useState(false);
+    AOS.init({
+        duration: 1200,
+      })
+      
 
     const [them, setThem] = useState(localStorage.getItem("them") ?? "light");
     useEffect(() => {
-        if(them == "dark"){
+        if (them == "dark") {
             document.body.classList.remove("dark");
             document.body.classList.add("light");
-        }else{
+        } else {
             document.body.classList.remove("light");
             document.body.classList.add("dark");
         }
     }, [them])
-    
+
     return (
-     <header className="flex">
-        <button className="menu icon-menu" onClick={()=>{
-            setshowModel(true)
-        }}></button>
-        <div />
-        
-        <nav>
-        <ul className="flex">
-            <li><a href="">About</a></li>
-            <li><a href="">Projects</a></li>
-            <li><a href="">Articles</a></li>
-            <li><a href="">CV</a></li>
-            <li><a href="">Contact</a></li>
-        </ul>
-        </nav>
+        <header  className="flex">
+            <button className="menu icon-menu" onClick={() => {
+                setshowModel(true)
+            }}></button>
+            <div />
 
-        { them === "dark" ? (
-            <button  className="icon-moon-o" id='them' onClick={() => { 
-                // set value in localstorge 
-                localStorage.setItem("them",them ==="dark" ? "light":"dark" );
-                setThem(localStorage.getItem("them"));  
-    
-             }} >
-                   
-             </button>
-        ) : (
-            <button  className="icon-wb_sunny" id='them' onClick={() => { 
-                // set value in localstorge 
-                localStorage.setItem("them",them ==="dark" ? "light":"dark" );
-                setThem(localStorage.getItem("them"));  
-    
-             }} >
-                   
-             </button>
-        )}
+            <nav data-aos="fade-down">
+                <ul className="flex">
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#project">Projects</a></li>
+                    <li><a href="#">Articles</a></li>
+                    <li><a href="#">CV</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <li><a href="#tech">Technologie</a></li>
+                </ul>
+            </nav>
 
-{showModal && (
+            {them === "dark" ? (
+                <button className="icon-moon-o" id='them' onClick={() => {
+                    // set value in localstorge 
+                    localStorage.setItem("them", them === "dark" ? "light" : "dark");
+                    setThem(localStorage.getItem("them"));
+
+                }} >
+
+                </button>
+            ) : (
+                <button className="icon-wb_sunny" id='them' onClick={() => {
+                    // set value in localstorge 
+                    localStorage.setItem("them", them === "dark" ? "light" : "dark");
+                    setThem(localStorage.getItem("them"));
+
+                }} >
+
+                </button>
+            )}
+
+            {showModal && (
                 <div className="fixed">
-                    <ul className="modal">
-                    <li>
-                        <button className="icon-close" onClick={()=>setshowModel(false)}>
-                      
-                        </button>
+                    <ul className="modal" data-aos="fade-down">
+                        <li>
+                            <button className="icon-close" onClick={() => setshowModel(false)}>
+
+                            </button>
                         </li>
-                        <li><a href="">About</a></li>
-                        <li><a href="">Projects</a></li>
-                        <li><a href="">Articles</a></li>
-                        <li><a href="">CV</a></li>
-                        <li><a href="">Contact</a></li>
+                        <li><a  onClick={() => setshowModel(false)} href="#about">About</a></li>
+                        <li><a  onClick={() => setshowModel(false)} href="#project">Projects</a></li>
+                        <li><a  onClick={() => setshowModel(false)} href="#">Articles</a></li>
+                        <li><a  onClick={() => setshowModel(false)} href="#">CV</a></li>
+                        <li><a  onClick={() => setshowModel(false)} href="#contact">Contact</a></li>
+                        <li><a  onClick={() => setshowModel(false)} href="#tech">Technologie</a></li>
                     </ul>
                 </div>
-)}
-        
-     </header>
+            )}
+
+        </header>
     );
 }
 export default Header;

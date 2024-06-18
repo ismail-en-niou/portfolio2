@@ -4,12 +4,15 @@ import { useForm, ValidationError } from '@formspree/react';
 import Lottie from "lottie-react";
 import doneAnimation from "../../../src/animation/Animation - 1703425763304.json" 
 import emailAnimation from "../../../src/animation/email.json"
-
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 export default function ContactUs(){
   const [state, handleSubmit] = useForm("myyrgonv");
- 
+  AOS.init({
+    duration: 1200,
+  })
   return (
-    <section className='contact-us'>
+    <section className='contact-us' data-aos="flip-up">
       <h1 className='title'>
         <span className='icon-email'></span>
         Contact Us

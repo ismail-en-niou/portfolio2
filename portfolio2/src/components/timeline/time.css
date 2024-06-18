@@ -1,0 +1,11 @@
+.light .test{
+   color: rgb(0, 0, 0);
+}
+.test .test1{
+    font-size: 20px;
+    font-weight: 800;
+}
+
+.light .test .test1{
+    color :rgba(0, 0, 0, 0.696);
+}

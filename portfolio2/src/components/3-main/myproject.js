@@ -28,8 +28,8 @@ export const myproject = [
   
     {
       title: "Data Base Forme",
-      category: ["PHP"],
-      subtitle: "Data Base Forme using php and mysqli white connection with data base  ",
+      category: ["back"],
+      subtitle: "This project is a simple login system that includes user authentication. The back-end services are powered by PHP and MySQL...",
       imgpath: "./images/database.png",
       link:"https://ismail-en-niou.github.io/database_/singup.html",
       git:"https://github.com/ismail-en-niou/database_"
@@ -73,11 +73,26 @@ export const myproject = [
   
     {
       title: "React PorteFolio",
-      category: ["react"],
+      category: ["react" , "js"],
       subtitle: "Responsive portefolio Using HTML CSS & JavaScript(react.js) ",
       imgpath: "./images/react portefolio.png",
       link:"https://ismail-en-niou.github.io/ecome_site/",
       git:"https://github.com/ismail-en-niou/ecome_site"
     },
-  
+    {
+      title: "to do list",
+      category: ["html","react","back", "js"],
+      subtitle: "This project is a to-do list application that includes a back-end system for user authentication and task management.",
+      imgpath: "./images/ToDo.png",
+      link:"https://ismail-en-niou.github.io/doda/login.html",
+      git:"https://github.com/ismail-en-niou/doda"
+    },
+    {
+      title: "Extation",
+      category: ["html","react","back"],
+      subtitle: "This tool is perfect for freelancers looking to save time and maintain a high standard of project documentation.",
+      imgpath: "./images/befree.png",
+      link:"https://ismail-en-niou.github.io/extation/BeFree%20Test/page/home/home2.html",
+      git:"https://github.com/ismail-en-niou/extation/"
+    },
   ];

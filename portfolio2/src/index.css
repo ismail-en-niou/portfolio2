@@ -12,6 +12,7 @@ html {
   letter-spacing: 0.1px;
   box-sizing: border-box;
   scroll-behavior: smooth;
+  overflow: none;
 }
 
 
@@ -40,7 +41,6 @@ html {
   --bgHeader: rgb(253, 253, 253);
   --bleu: rgb(0 149 246);
   --icon-hover: #333;
-
 }
 body{
   background-color: var(--primary);
@@ -146,8 +146,9 @@ body {
 
 @media (max-width : 600px){
   .container{
-    width: 98%;
+    width: 100%;
     padding: 0 1rem;
+    overflow: hidden;
   }
   .scroll2top{
     opacity: .5;

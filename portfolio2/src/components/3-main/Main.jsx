@@ -4,10 +4,15 @@ import { useState } from 'react';
 import { myproject } from './myproject';
 import { motion } from "framer-motion";
 import { AnimatePresence } from "framer-motion";
-
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 export default function Main() {
   const [active, setactive] = useState("all");
   const [array, setarray] = useState(myproject)
+  AOS.init({
+    duration: 1200,
+  })
+  
 
   const handelClick = (buttonCategory) => {
     setactive(buttonCategory);
@@ -23,20 +28,20 @@ export default function Main() {
   return (
     <main className='flex'>
       <section className="flex  left-section">
-        <button
+        <button data-aos="zoom-in"
           onClick={() => {
             setactive("all");
             setarray(myproject)
           }}
           className={active === "all" ? "active" : null}>All project</button>
-        <button
+        <button data-aos="zoom-in"
           onClick={() => {
             handelClick("css")
           }}
           className={active === "css" ? "active" : null}>HTML & CSS</button>
 
 
-        <button
+        <button data-aos="zoom-in"
           onClick={() => {
             handelClick("js")
           }}
@@ -45,7 +50,7 @@ export default function Main() {
 
 
 
-        <button
+        <button data-aos="zoom-in"
           onClick={() => {
             handelClick("react")
           }}
@@ -54,11 +59,11 @@ export default function Main() {
 
 
 
-        <button
+        <button data-aos="zoom-in"
           onClick={() => {
-            handelClick("PHP")
+            handelClick("back")
           }}
-          className={active === "PHP" ? "active" : null}>PHP</button>
+          className={active === "back" ? "active" : null}>Back-End</button>
 
 
 
@@ -67,7 +72,7 @@ export default function Main() {
         <AnimatePresence>
           {array.map((item) => {
             return (
-              <motion.article
+              <motion.article data-aos="zoom-in"
                 layout
                 initial={{ transform: "scale(0)" }}
                 animate={{ transform: "scale(1)" }}
@@ -78,7 +83,7 @@ export default function Main() {
                 key={item.imgpath} 
                 className='card'>
                 <img style={{ width: "266px" }} src={item.imgpath} />
-                <div style={{ width: "266px" }} className="box">
+                <div data-aos="zoom-out" style={{ width: "266px" }} className="box">
                   <h1 className='title'> {item.title}</h1>
                   <p className='sub-title'>    {item.subtitle}        </p>
                   <div className="flex icons">

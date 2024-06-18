@@ -3,10 +3,16 @@ import './hero.css';
 import Lottie from "lottie-react";
 import Animation from "../../../src/animation/animationenitial.json" 
 import { motion } from "framer-motion";
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 export default function Hero() {
+  AOS.init({
+    duration: 1200,
+  })
+  
   return (
     <section className='hero flex'>
-      <div className="left-section ">
+      <div data-aos="fade-right" className="left-section ">
         <div className="parent-avatar flex">
           <motion.img
             initial={{transform:"scale(0)"}}
@@ -41,7 +47,7 @@ export default function Hero() {
 
       </div>
 
-      <div className="right-section animation ">
+      <div data-aos="fade-left" className="right-section animation ">
       <Lottie className='animation'  style={{height:"auto"}} animationData={Animation} />
       </div>
     </section>

@@ -3,6 +3,7 @@ import Hero from './components/2-hero/hero';
 import Main from './components/3-main/Main';
 import ContactUs  from'./components/4-contact/ContactUs';
 import Footer from './components/5-footer/footer';
+import Time from './components/timeline/Time'
 import { useEffect, useState } from 'react';
 function App() {
   const [button, setbutton] = useState(false)
@@ -17,14 +18,16 @@ useEffect(() => {
 }, [])
 
   return (
-      <div id='up'  className='container'>
+      <div id='up'  className='container' >
       <Header /> 
       <Hero /> 
-      <div className="divider"></div>
+      <div className="divider" id='project'></div>
       <Main />
-      <div className="divider"></div>
+      <div className="divider" id='contact'></div>
       <ContactUs />
-      <div className="divider"></div>
+      <div className="divider" id='contact'></div>
+      <Time />
+      <div className="divider" id='tech'></div>
       <Footer />
       
      
