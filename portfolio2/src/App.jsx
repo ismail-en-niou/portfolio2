@@ -4,8 +4,11 @@ import Main from './components/3-main/Main';
 import ContactUs  from'./components/4-contact/ContactUs';
 import Footer from './components/5-footer/footer';
 import Time from './components/timeline/Time'
-import Services from './components/6-sservices/Services'
+import Services from './components/6-sservices/services'
 import { useEffect, useState } from 'react';
+
+
+
 function App() {
   const [button, setbutton] = useState(false)
 useEffect(() => {

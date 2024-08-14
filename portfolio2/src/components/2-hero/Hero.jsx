@@ -39,10 +39,10 @@ export default function Hero() {
          across different industries
         </p>
           <div className="all-icons flex">
-            <div className="icon icon-twitter"></div>
-            <div className="icon icon-instagram"></div>
-            <div className="icon icon-github-square"></div>
-            <div className="icon icon-linkedin-square"></div>
+            <a href="https://x.com/ismailEnniou"target='_blank'   className="icon icon-twitter" ></a>
+            <a className="icon icon-instagram" target='_blank' href='https://www.instagram.com/ismail_enniou/'></a>
+            <a className="icon icon-github-square" target='_blank' href='https://github.com/ismail-en-niou'></a>
+            <a className="icon icon-linkedin-square" target='_blank' href='https://www.linkedin.com/feed/'></a>
           </div>
 
       </div>

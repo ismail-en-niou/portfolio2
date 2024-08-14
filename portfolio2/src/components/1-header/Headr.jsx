@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import "./header.css";
 import AOS from 'aos';
 import 'aos/dist/aos.css';
-
+import { Link } from "react-router-dom";
 function Header() {
     const [showModal, setshowModel] = useState(false);
     AOS.init({
@@ -32,7 +32,7 @@ function Header() {
                 <ul className="flex">
                     <li><a href="#about">About</a></li>
                     <li><a href="#project">Projects</a></li>
-                    <li><a href="/articals">Blogs</a></li>
+                    <li><Link to="/articles">Blogs</Link></li>
                     <li><a href="#Services">Services</a></li>
                     <li><a href="#contact">Contact</a></li>
                     <li><a href="#tech">Technologie</a></li>

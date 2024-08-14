@@ -39,10 +39,11 @@ section.hero .all-icons{
     gap: 1.5rem;    
     color: var(--subtitle);
 }
+
 section.hero .all-icons .icon:hover{
-    font-size: 1.5rem;
-    transition: .4s;
+    transition: .2s;
     cursor: pointer;
+    filter: drop-shadow(1px 2px 20px var(--icon-hover));
     color: var( --icon-hover);
 }
 .animation{
@@ -54,7 +55,11 @@ section.hero .all-icons .icon:hover{
         display: none;
     }
   }
-
+  section.hero .all-icons a{
+    font-size: 1.4rem;
+    gap: 1.5rem;    
+    color: var(--subtitle);
+}
 
 
 

@@ -5,7 +5,7 @@ import CardHeader from '@mui/material/CardHeader';
 import CardMedia from '@mui/material/CardMedia';
 import CardContent from '@mui/material/CardContent';
 import Avatar from '@mui/material/Avatar';
-import IconButton from '@mui/material/IconButton';
+import DesignServicesIcon from '@mui/icons-material/DesignServices';
 import Typography from '@mui/material/Typography';
 import { red } from '@mui/material/colors';
 import AOS from 'aos';
@@ -46,7 +46,13 @@ const Services = () => {
         duration: 1200,
       })
     return (
+    <div  style ={{ display: 'flex', gap: '3rem', flexDirection : "column" }}>
+      <div style ={{ display: 'flex', gap: '.5rem', alignItems : "center"}}>
+        <DesignServicesIcon />
+        <h1> Services </h1>
+      </div>
         <div  style={{ display: 'flex', flexWrap: 'wrap', gap: '20px', justifyContent: 'center' }}>
+           
             {table_of_services.map((service, index) => (
                 <Card  data-aos="zoom-in" className='card' key={index} sx={{ maxWidth: 345 }}>
                     <CardHeader className='text'
@@ -75,6 +81,7 @@ const Services = () => {
                     </CardContent>
                 </Card>
             ))}
+        </div>
         </div>
     );
 }

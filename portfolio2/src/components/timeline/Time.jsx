@@ -8,11 +8,12 @@ import TimelineDot from '@mui/lab/TimelineDot';
 import './time.css'
 import AOS from 'aos';
 import 'aos/dist/aos.css';
+import TimelineIcon from '@mui/icons-material/Timeline';
 const tablle = [
   "HTML",
   "CSS",
   "JavaScript",
-    "Tailwind",
+  "Tailwind",
   "Git & GitHub",
   "SQL",
   "React.js",
@@ -26,12 +27,15 @@ export default function OutlinedTimeline() {
     duration: 1200,
   })
   return (
-    <Timeline  data-aos="flip-down" className='test' position="alternate">
+    <Timeline data-aos="flip-down" className='test' position="alternate">
+      <div style ={{ display: 'flex', gap: '.5rem', alignItems : "center"}}>
+        <TimelineIcon />
         <h1>technologies</h1>
+      </div>
       {tablle.map((item, index) => (
         <TimelineItem key={index}>
           <TimelineSeparator >
-            <TimelineDot data-aos="fade-right"  variant="outlined" />
+            <TimelineDot data-aos="fade-right" variant="outlined" />
             {index < tablle.length - 1 && <TimelineConnector data-aos="fade-left" />}
           </TimelineSeparator>
           <TimelineContent data-aos="zoome-out" className='test1'>{item}</TimelineContent>
