@@ -92,7 +92,7 @@ export default function Main() {
                      <a target='_blank' className="icon-github-square" href={item.git}></a>
                       
                     </div>
-                    <a href="" className='link flex'>
+                    <a  href={item.link} target='_blank' className='link flex'>
                       more <span style={{ alignSelf: "end" }} className="icon-arrow_forward "></span>
                     </a>
                   </div>

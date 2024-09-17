@@ -49,8 +49,8 @@ export const myproject = [
       category: ["html", "css","js"],
       subtitle: " Make a simple Image Editor in HTML CSS JavaScript for edit your images",
       imgpath: "./images/editeur.png",
-      link:"https://ismail-en-niou.github.io/ecome_site/",
-      git:"https://github.com/ismail-en-niou/ecome_site"
+      link:"https://ismail-en-niou.github.io/editeur_de_photos",
+      git:"https://github.com/ismail-en-niou/editeur_de_photos"
     },
   
     {
