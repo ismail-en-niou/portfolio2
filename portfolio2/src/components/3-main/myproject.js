@@ -103,4 +103,20 @@ export const myproject = [
       link:"https://modern-restaurant-applicati-git-720fa1-ismail-en-nious-projects.vercel.app/",
       git:"https://github.com/ismail-en-niou/Modern-Restaurant-Application"
     },
+    {
+      title: "Cosmic Image Editor",
+      category: ["react", "back"],
+      subtitle: "Welcome to the Cosmic Image Editor, an out-of-this-world web application that allows you to transform your images with the power of the cosmos!",
+      imgpath: "./images/image.png",
+      link:"https://remove-bp85v968b-ismail-en-nious-projects.vercel.app/",
+      git:"https://github.com/ismail-en-niou/remove_bg"
+    },
+    {
+      title: "IT Knowledge Quiz",
+      category: ["react", "back"],
+      subtitle: "IT Knowledge Quiz is an interactive web application designed to test and enhance your knowledge in various IT domains and more ...",
+      imgpath: "./images/game.png",
+      link:"https://ismail-en-niou.github.io/info4mth/",
+      git:"https://github.com/ismail-en-niou/info4mth"
+    },
   ];

@@ -10,7 +10,7 @@ section.hero .left-section{
     flex-grow: 1;
 }
 section.hero .avatar{
-  width: 88px;
+  width: 100px;
   border-radius: 50%;
   border: 2px solid darkorange;
   padding:1px ;
@@ -19,11 +19,11 @@ section.hero .avatar{
 section.hero .icon-verified{
     color: var(--bleu);
     font-size: 1.2rem;
-    margin-bottom: .3rem;
+    margin-left:-1.1rem ;
 }
 section.hero h1.title
 {
-    font-size: 2.85rem;
+    font-size: 2rem;
     line-height: 3.3rem;
     margin: 24px 0px;
     color: var(--title);
